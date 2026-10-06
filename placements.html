@@ -47,27 +47,30 @@
         </div>
     </section>
     <section class="placement-search">
-        <div class="placement-search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search by company, role or skill">
-            <button>Search</button>
-        </div>
-    </section>
+    <div class="placement-search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+            type="text"
+            id="placementSearch"
+            placeholder="Search placements...">
+        <button id="placementSearchButton">Search</button>
+    </div>
+</section>
     <section class="placement-categories">
-        <button class="placement-category active">All</button>
-        <button class="placement-category">Software</button>
-        <button class="placement-category">Core</button>
-        <button class="placement-category">Consulting</button>
-        <button class="placement-category">Finance</button>
-        <button class="placement-category">Product</button>
-    </section>
+    <button class="placement-category active" data-category="all">All</button>
+    <button class="placement-category" data-category="software">Software</button>
+    <button class="placement-category" data-category="core">Core</button>
+    <button class="placement-category" data-category="consulting">Consulting</button>
+    <button class="placement-category" data-category="finance"> Finance</button>
+    <button class="placement-category" data-category="product">Product</button>
+</section>
     <section class="placement-section">
         <div class="placement-heading">
             <div class="section-label">EXPLORE OPPORTUNITIES</div>
             <h2>Featured <span>Placements</span></h2>
         </div>
         <div class="placement-grid">
-            <div class="placement-card">
+            <div class="placement-card" data-category="software">
                 <div class="placement-top">
                     <div class="placement-company-icon">
                         <i class="fa-solid fa-building"></i>
@@ -90,7 +93,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="placement-card">
+            <div class="placement-card" data-category="software">
                 <div class="placement-top">
                     <div class="placement-company-icon">
                         <i class="fa-solid fa-building"></i>
@@ -113,7 +116,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="placement-card">
+            <div class="placement-card" data-category="consulting">
                 <div class="placement-top">
                     <div class="placement-company-icon">
                         <i class="fa-solid fa-building"></i>
@@ -136,7 +139,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="placement-card">
+            <div class="placement-card" data-category="software">
                 <div class="placement-top">
                     <div class="placement-company-icon">
                         <i class="fa-solid fa-code"></i>
@@ -159,7 +162,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="placement-card">
+            <div class="placement-card" data-category="software">
                 <div class="placement-top">
                     <div class="placement-company-icon">
                         <i class="fa-solid fa-laptop-code"></i>
@@ -182,7 +185,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="placement-card">
+            <div class="placement-card" data-category="consulting">
                 <div class="placement-top">
                     <div class="placement-company-icon">
                         <i class="fa-solid fa-chart-line"></i>
@@ -207,5 +210,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

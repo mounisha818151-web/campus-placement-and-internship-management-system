@@ -46,28 +46,25 @@
     <section class="company-search">
         <div class="company-search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input
-                type="text"
-                placeholder="Search companies or industries"
-            >
-            <button>Search</button>
+            <input type="text" id="companySearch" placeholder="Search companies...">
+            <button id="companySearchButton">Search</button>
         </div>
     </section>
     <section class="company-categories">
-        <button class="company-category active">All</button>
-        <button class="company-category">IT & Software</button>
-        <button class="company-category">Consulting</button>
-        <button class="company-category">Finance</button>
-        <button class="company-category">Product</button>
-        <button class="company-category">Core</button>
-    </section>
+    <button class="company-category active" data-category="all">All</button>
+    <button class="company-category" data-category="software">IT &amp; Software</button>
+    <button class="company-category" data-category="consulting">Consulting</button>
+    <button class="company-category" data-category="finance">Finance</button>
+    <button class="company-category" data-category="product">Product</button>
+    <button class="company-category" data-category="core">Core</button>
+</section>
     <section class="company-section">
         <div class="company-heading">
             <div class="section-label">EXPLORE OUR NETWORK</div>
             <h2>Featured <span>Companies</span></h2>
         </div>
         <div class="company-grid">
-            <div class="company-card">
+            <div class="company-card" data-category="software">
                 <div class="company-card-top">
                     <div class="company-logo"><span>T</span></div>
                     <span class="company-industry">IT & SOFTWARE</span>
@@ -86,7 +83,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="company-card">
+            <div class="company-card" data-category="software">
                 <div class="company-card-top">
                     <div class="company-logo"><span>I</span></div>
                     <span class="company-industry">IT & SOFTWARE</span>
@@ -105,7 +102,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="company-card">
+            <div class="company-card" data-category="consulting">
                 <div class="company-card-top">
                     <div class="company-logo"><span>A</span></div>
                     <span class="company-industry">CONSULTING</span>
@@ -124,7 +121,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="company-card">
+            <div class="company-card" data-category="software">
                 <div class="company-card-top">
                     <div class="company-logo"><span>W</span></div>
                     <span class="company-industry">IT & SOFTWARE</span>
@@ -143,7 +140,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="company-card">
+            <div class="company-card" data-category="software">
                 <div class="company-card-top">
                     <div class="company-logo"><span>C</span></div>
                     <span class="company-industry">IT & SOFTWARE</span>
@@ -162,7 +159,7 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="company-card">
+            <div class="company-card" data-category="consulting">
                 <div class="company-card-top">
                     <div class="company-logo"><span>D</span></div>
                     <span class="company-industry">CONSULTING</span>
@@ -183,5 +180,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

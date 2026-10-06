@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,28 +49,26 @@
     <section class="internship-search">
         <div class="search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search by role, skill or company">
-            <button> Search</button>
+            <input type="text" id="internshipSearch" placeholder="Search internships...">
+            <button id="searchButton"> Search</button>
         </div>
     </section>
     <section class="internship-categories">
-        <button class="category active">All</button>
-        <button class="category">Java</button>
-        <button class="category">Web Development</button>
-        <button class="category">AI / ML</button>
-        <button class="category">Data Science</button>
-        <button class="category">Cloud</button>
-        <button class="category">Cybersecurity</button>
-    </section>
+    <button class="category active" data-category="all">All</button>
+    <button class="category" data-category="java">Java</button>
+    <button class="category" data-category="web">Web Development</button>
+    <button class="category" data-category="ai">AI / ML</button>
+    <button class="category" data-category="data">Data Science</button>
+    <button class="category" data-category="cloud">Cloud</button>
+    <button class="category" data-category="cybersecurity">Cybersecurity</button>
+</section>
     <section class="internship-section">
         <div class="section-heading">
             <div class="section-label">EXPLORE OPPORTUNITIES</div>
-            <h2>
-                Featured <span>Internships</span>
-            </h2>
+            <h2>Featured <span>Internships</span></h2>
         </div>
         <div class="internship-grid">
-            <div class="internship-card">
+            <div class="internship-card" data-category="java">
                 <div class="internship-top">
                     <div class="company-icon"><i class="fa-brands fa-java"></i></div>
                     <span class="internship-type">INTERNSHIP</span>
@@ -81,9 +78,7 @@
                 <div class="internship-details">
                     <span><i class="fa-solid fa-location-dot"></i>Chennai</span>
                     <span><i class="fa-regular fa-clock"></i>3 Months</span>
-                    <span><i class="fa-solid fa-laptop"></i>
-                        Hybrid
-                    </span>
+                    <span><i class="fa-solid fa-laptop"></i>Hybrid</span>
                 </div>
                 <div class="skills">
                     <span>Java</span>
@@ -92,7 +87,7 @@
                 </div>
                 <a href="#" class="apply-btn">Apply Now<i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="internship-card">
+            <div class="internship-card" data-category="web">
                 <div class="internship-top">
                     <div class="company-icon"><i class="fa-solid fa-code"></i></div>
                     <span class="internship-type">INTERNSHIP</span>
@@ -111,7 +106,7 @@
                 </div>
                 <a href="#" class="apply-btn">Apply Now<i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="internship-card">
+            <div class="internship-card" data-category="ai">
                 <div class="internship-top">
                     <div class="company-icon"><i class="fa-solid fa-robot"></i></div>
                     <span class="internship-type">INTERNSHIP</span>
@@ -129,7 +124,7 @@
                 </div>
                 <a href="#" class="apply-btn">Apply Now<i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="internship-card">
+            <div class="internship-card" data-category="data">
                 <div class="internship-top">
                     <div class="company-icon"><i class="fa-solid fa-chart-line"></i></div>
                     <span class="internship-type">INTERNSHIP</span>
@@ -148,7 +143,7 @@
                 </div>
                 <a href="#" class="apply-btn">Apply Now<i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="internship-card">
+            <div class="internship-card" data-category="cloud">
                 <div class="internship-top">
                     <div class="company-icon"><i class="fa-solid fa-cloud"></i></div>
                     <span class="internship-type">INTERNSHIP</span>
@@ -167,7 +162,7 @@
                 </div>
                 <a href="#" class="apply-btn">Apply Now<i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="internship-card">
+            <div class="internship-card" data-category="cybersecurity">
                 <div class="internship-top">
                     <div class="company-icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <span class="internship-type">INTERNSHIP</span>
@@ -188,5 +183,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
